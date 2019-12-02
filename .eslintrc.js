@@ -20,7 +20,7 @@ module.exports = {
         'react/prop-types': ['off'],
         'react/no-unescaped-entities': ['error', { forbid: ['>', '}'] }],
         'react-hooks/rules-of-hooks': 'error',
-        indent: ['error', 2, { SwitchCase: 1 }],
+        //indent: ['error', 2, { SwitchCase: 1 }],
         'comma-dangle': ['error', 'always-multiline'],
         'linebreak-style': ['error', 'unix'],
         quotes: ['error', 'single'],

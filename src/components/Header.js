@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Header = ({ message }) => {
+const Header = ({ pageHeader }) => {
     return ( 
         <h2 className = "header text-center"> 
-            { message } 
+            { pageHeader } 
         </h2>
     );
 };
 
 Header.propTypes = {
-    message: PropTypes.string,
+    pageHeader: PropTypes.string,
 };
 
 export default Header;

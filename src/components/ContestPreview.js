@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class ContestPreview extends React.Component {
-    handleClick() {
-        console.log(this.props.contestName);
+    handleClick = () => {
+        this.props.onClick(this.props.id); 
     }
     render() {
         return (
-            <div className="contestPreview" onClick={this.handleClick}>
+            <div className="link contestPreview" onClick={this.handleClick}>
                 <div className="category-name">
                     {this.props.categoryName}
                 </div>
@@ -20,8 +20,10 @@ class ContestPreview extends React.Component {
 }
 
 ContestPreview.propTypes = {
+    id: PropTypes.number.isRequired,
     categoryName: PropTypes.string.isRequired,
     contestName: PropTypes.string.isRequired,
+    onClick: PropTypes.func.isRequired,
 };
 
 export default ContestPreview;

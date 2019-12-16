@@ -1,1 +1,25 @@
 
+.link {
+    cursor: pointer;
+}
+
+.contestPreview {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 16px;
+
+    .category-name {
+        width: 100%;
+        background-color: #ccc;
+        padding: 5px 10px;
+        font-weight: bold;
+    }
+    .contest-name {
+        padding: 5px 10px;
+    }
+}
+
+.home-link {
+    margin-top: 1em;
+    color: #0000ee;
+}

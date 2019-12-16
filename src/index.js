@@ -3,6 +3,6 @@ import ReactDom from 'react-dom';
 import App from './components/App';
 
 ReactDom.hydrate( 
-    <App initialContests={window.initialData.contests} />,
+    <App initialData={window.initialData} />,
     document.getElementById('root')
 );
